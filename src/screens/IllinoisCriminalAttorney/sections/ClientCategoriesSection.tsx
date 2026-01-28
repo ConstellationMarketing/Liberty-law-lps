@@ -4,19 +4,19 @@ export const ClientCategoriesSection = (): JSX.Element => {
   const categories = [
     {
       title: "Individuals Facing Arrest",
-      description: "If you're under investigation or facing arrest, get immediate legal guidance to protect your rights from the start."
+      description: "Immediate legal support from a dedicated criminal defense attorney to protect your rights from the moment of arrest."
     },
     {
       title: "Charged with Criminal Offenses",
-      description: "Whether you're charged with a felony or misdemeanor, we provide aggressive defense to fight for the best outcome."
+      description: "Strong defense strategies for felony and misdemeanor charges to safeguard your freedom and future."
     },
     {
       title: "Traffic & DUI Defense",
-      description: "From traffic violations to DUI charges, we help minimize penalties and protect your driving privileges."
+      description: "Skilled representation to minimize penalties and protect your driving record in traffic-related and impaired driving cases."
     },
     {
       title: "Record Relief & Expungement",
-      description: "Clear your criminal record through expungement or sealing to move forward with a fresh start."
+      description: "Legal guidance to explore expungement opportunities and help clear your criminal record where eligible."
     }
   ];
 
