@@ -42,13 +42,18 @@ export const ContactSection = (): JSX.Element => {
             </h3>
 
             <form
-              onSubmit={handleSubmit}
-              action="https://formsubmit.co/david@libertylawfirm.net"
+              name="consultation-request"
               method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              action="/thank-you"
             >
-              <input type="hidden" name="_subject" value="New consultation request from Liberty Law website" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value={`${window.location.origin}/thank-you`} />
+              <input type="hidden" name="form-name" value="consultation-request" />
+              <p className="hidden">
+                <label>
+                  Don't fill this out if you're human: <input name="bot-field" />
+                </label>
+              </p>
               
               <div className="space-y-4">
                 <div>
