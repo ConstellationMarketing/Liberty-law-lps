@@ -50,7 +50,7 @@ export const AttorneySection = (): JSX.Element => {
 
             <div className="mt-8">
               <button
-                className="bg-wosnik-accent hover:bg-wosnik-accent/80 text-wosnik-dark font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent transition-all duration-150 uppercase tracking-[2px] whitespace-nowrap"
+                className="bg-wosnik-accent hover:bg-wosnik-accent/80 text-white font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent transition-all duration-150 uppercase tracking-[2px] whitespace-nowrap"
                 onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Schedule a Free Consultation
