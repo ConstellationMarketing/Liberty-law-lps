@@ -10,7 +10,7 @@ export const CallToActionMainSection = (): JSX.Element => {
               Call Now for Criminal Case Help
             </h2>
             <p className="font-body text-white/90 text-sm md:text-base">
-              Free consultations available — speak with an experienced criminal defense attorney today
+              Free consultations available - speak directly with a trusted criminal attorney today.
             </p>
           </div>
 
