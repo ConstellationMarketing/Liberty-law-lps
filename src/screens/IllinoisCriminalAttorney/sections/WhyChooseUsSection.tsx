@@ -2,11 +2,11 @@ import React from "react";
 
 export const WhyChooseUsSection = (): JSX.Element => {
   const serviceHighlights = [
-    "Aggressive representation for felonies, misdemeanors, DUI, and traffic offenses",
-    "Free initial consultations to review your case and discuss your options",
-    "Local expertise in Naperville and surrounding county courts",
-    "Personalized defense strategies tailored to your unique situation",
-    "Proven track record of favorable outcomes for our clients"
+    "Proven criminal defense Veteran in felony and misdemeanor cases",
+    "Free consultation available",
+    "Successful outcomes in state courts",
+    "Local Naperville representation with deep understanding of regional courts",
+    "Aggressive, strategic, and client-focused advocacy"
   ];
 
   return (
@@ -17,34 +17,26 @@ export const WhyChooseUsSection = (): JSX.Element => {
             Why Choose Liberty Law, P.C.
           </h2>
           <p className="font-body text-wosnik-accent text-lg max-w-3xl mx-auto">
-            Proven criminal defense built on local knowledge and strategic advocacy
+            Proven criminal defense built on local and strategic advocacy.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-4">
             <p className="font-body text-white leading-relaxed">
-              When you're facing criminal charges, the attorney you choose can make all the difference. At Liberty 
-              Law, P.C., we combine extensive courtroom experience with a deep understanding of Illinois criminal 
-              law to provide the strong defense you need.
+              Facing felony or misdemeanor charges can be stressful and life-altering, but you don't have to face them alone. Liberty Law, P.C. begins by carefully listening to understand your situation, priorities, and defense options.
             </p>
 
             <p className="font-body text-white leading-relaxed">
-              We know the local courts, the prosecutors, and the judges. This insight allows us to develop defense 
-              strategies that are not only legally sound but also tailored to the specific dynamics of your case and 
-              jurisdiction.
+              We focus on honest guidance, tailored legal strategies, and clear communication throughout every stage of your case to ensure you feel informed and supported.
             </p>
 
             <p className="font-body text-white leading-relaxed">
-              Our firm handles every type of criminal matter, from minor traffic violations to serious felony charges. 
-              We approach each case with the same level of dedication and attention, because we understand that every 
-              charge can have serious consequences for your future.
+              Our firm handles serious criminal cases with precision and determination, providing strong defense representation in both felonies and misdemeanors for clients across Naperville and surrounding counties.
             </p>
 
             <p className="font-body text-white leading-relaxed">
-              Whether we're negotiating with prosecutors for reduced charges or taking your case to trial, you can 
-              trust that Liberty Law, P.C. will fight tirelessly to protect your rights and pursue the best possible 
-              outcome.
+              We make sure each client understands the criminal process, potential consequences, and available options, empowering you to make informed decisions about your defense.
             </p>
           </div>
 
