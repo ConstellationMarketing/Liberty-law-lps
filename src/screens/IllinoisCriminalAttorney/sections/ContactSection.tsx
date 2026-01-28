@@ -30,7 +30,7 @@ export const ContactSection = (): JSX.Element => {
             Contact Liberty Law P.C.
           </h2>
           <p className="font-body text-gray-700 text-lg max-w-3xl mx-auto">
-            Let's discuss your case and explore your legal options. Reach out today for a free consultation.
+            Let's discuss your case - Get trusted criminal defense guidance today.
           </p>
         </div>
 
