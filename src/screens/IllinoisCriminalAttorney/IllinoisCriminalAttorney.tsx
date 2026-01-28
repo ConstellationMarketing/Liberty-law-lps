@@ -49,10 +49,7 @@ const IllinoisHeroSection = (): JSX.Element => {
         </h2>
 
         <p className="font-body text-white text-base max-w-3xl mx-auto leading-relaxed mb-8">
-          When you're facing criminal charges in Naperville or surrounding Illinois counties, you need a skilled
-          defense attorney who will fight to protect your rights and your future. Liberty Law, P.C. provides
-          aggressive, strategic representation for clients charged with felonies, misdemeanors, DUI, and other
-          criminal offenses throughout DuPage, Kane, Will, Kendall, Grundy, and DeKalb Counties.
+          Facing criminal charges in Naperville or surrounding counties? Liberty Law, P.C. offers skilled, aggressive criminal defense representation in felony and misdemeanor cases. We protect your rights and fight to secure the best possible outcome for your future.
         </p>
 
         <button
