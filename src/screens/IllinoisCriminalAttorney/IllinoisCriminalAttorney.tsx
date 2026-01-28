@@ -26,7 +26,7 @@ const IllinoisHeroSection = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col items-end">
-            <p className="font-body text-white text-xs uppercase tracking-wider">Naperville's Trusted Criminal Defense</p>
+            <p className="font-body text-[#04304c] text-xs uppercase tracking-wider">Naperville's Trusted Criminal Defense</p>
             <a
               href="tel:6302836421"
               className="font-body text-white hover:text-wosnik-accent transition-colors text-lg font-semibold"
