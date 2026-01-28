@@ -1,8 +1,16 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 export const ThankYou = (): JSX.Element => {
   return (
     <div className="w-full min-h-screen bg-wosnik-light">
+      <Helmet>
+        <title>Thank You - Liberty Law, P.C.</title>
+        <meta
+          name="description"
+          content="Thank you for contacting Liberty Law, P.C. We'll respond to your consultation request within 24 hours."
+        />
+      </Helmet>
       {/* Navigation Bar */}
       <div className="relative w-full bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
