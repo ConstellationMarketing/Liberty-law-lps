@@ -73,13 +73,12 @@ export const IllinoisCriminalAttorney = (): JSX.Element => {
     <div className="w-full bg-wosnik-light">
       <div className="flex flex-col">
         <IllinoisHeroSection />
-        <BadgesSection />
+        <HighlightBoxesSection />
         <CriminalDefenseServicesSection />
         <WhyChooseUsSection />
         <AboutUsSection />
         <AttorneySection />
-        <WhyUsSection />
-        <ClientTestimonialsSection />
+        <ClientCategoriesSection />
         <CallToActionMainSection />
         <ContactSection />
         <FooterSection />
