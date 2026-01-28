@@ -4,19 +4,19 @@ export const CriminalDefenseServicesSection = (): JSX.Element => {
   const services = [
     {
       title: "Felony Defense",
-      description: "Comprehensive defense for serious felony charges including violent crimes, drug offenses, theft, and white-collar crimes."
+      description: "Aggressive legal representation for individuals facing felony charges, protecting your rights and fighting for the best possible outcome."
     },
     {
       title: "Misdemeanor Defense",
-      description: "Strategic representation for misdemeanor charges to minimize penalties and protect your record."
+      description: "Skilled defense for misdemeanor cases, ensuring your side of the story is heard and your future is protected."
     },
     {
       title: "Criminal Case Consultation",
-      description: "Expert legal advice and case evaluation to understand your charges and develop a strong defense strategy."
+      description: "Personalized strategy sessions to evaluate your case, outline options, and develop an effective defense plan."
     },
     {
       title: "Post-Conviction & Appeals",
-      description: "Post-conviction relief and appellate advocacy to challenge convictions and seek sentence modifications."
+      description: "Challenging convictions and seeking post-trial relief with proven criminal defense counsel."
     }
   ];
 
