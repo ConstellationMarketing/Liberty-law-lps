@@ -41,8 +41,8 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
         wosnik: {
-          accent: '#deab1e',
-          dark: '#181820',
+          accent: '#0070e0',
+          dark: '#04304c',
           light: '#efefef',
           darken: '#e1e1e1',
         },
