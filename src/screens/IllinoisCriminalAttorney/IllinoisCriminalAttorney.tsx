@@ -10,9 +10,9 @@ import {
   ContactSection,
   CallToActionMainSection,
   FooterSection
-} from "../IllinoisCriminalAttorney/sections";
+} from "./sections";
 
-const HeroSection = (): JSX.Element => {
+const IllinoisHeroSection = (): JSX.Element => {
   return (
     <section className="relative w-full min-h-[500px] bg-wosnik-dark">
       {/* Navigation Bar */}
@@ -63,7 +63,7 @@ const HeroSection = (): JSX.Element => {
   );
 };
 
-export const Frame = (): JSX.Element => {
+export const IllinoisCriminalAttorney = (): JSX.Element => {
   return (
     <div className="w-full bg-wosnik-light">
       <Helmet>
@@ -83,7 +83,7 @@ export const Frame = (): JSX.Element => {
         <meta name="twitter:image" content="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F5af7e492db8347e48dcdefbb3332a950?format=webp&width=1200" />
       </Helmet>
       <div className="flex flex-col">
-        <HeroSection />
+        <IllinoisHeroSection />
         <HighlightBoxesSection />
         <CriminalDefenseServicesSection />
         <WhyChooseUsSection />

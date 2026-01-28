@@ -1,52 +1,131 @@
 import React from "react";
-import { CheckCircle } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 export const ThankYou = (): JSX.Element => {
   return (
-    <div className="w-full min-h-screen bg-wosnik-light flex items-center justify-center">
-      <div className="max-w-2xl mx-auto px-4 py-16 text-center">
-        <div className="bg-white rounded-lg shadow-lg p-12">
-          <div className="flex justify-center mb-6">
-            <div className="bg-green-100 rounded-full p-4">
-              <CheckCircle className="w-16 h-16 text-green-600" />
+    <div className="w-full min-h-screen bg-wosnik-light">
+      <Helmet>
+        <title>Liberty Law P.C.</title>
+        <meta
+          name="description"
+          content="Thank you for contacting Liberty Law, P.C. We'll respond to your consultation request within 24 hours."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Liberty Law P.C." />
+        <meta property="og:description" content="Thank you for contacting Liberty Law, P.C. We'll respond to your consultation request within 24 hours." />
+        <meta property="og:image" content="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F5af7e492db8347e48dcdefbb3332a950?format=webp&width=1200" />
+        <meta property="og:site_name" content="Liberty Law P.C." />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Liberty Law P.C." />
+        <meta name="twitter:description" content="Thank you for contacting Liberty Law, P.C. We'll respond to your consultation request within 24 hours." />
+        <meta name="twitter:image" content="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F5af7e492db8347e48dcdefbb3332a950?format=webp&width=1200" />
+      </Helmet>
+      {/* Navigation Bar */}
+      <div className="relative w-full bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F5af7e492db8347e48dcdefbb3332a950?format=webp&width=400"
+              alt="Liberty Law P.C."
+              className="h-20 md:h-24 w-auto object-contain"
+            />
+          </div>
+
+          <div className="flex flex-col items-end">
+            <p className="font-body text-[#04304c] text-xs uppercase tracking-wider font-bold">Naperville's Trusted Criminal Defense</p>
+            <a
+              href="tel:6302836421"
+              className="font-body text-wosnik-dark hover:text-wosnik-accent transition-colors text-lg font-semibold"
+            >
+              (630) 283-6421
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Thank You Content */}
+      <section className="w-full py-20 md:py-32">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          {/* Success Icon */}
+          <div className="mb-8">
+            <div className="w-24 h-24 mx-auto bg-wosnik-accent rounded-full flex items-center justify-center">
+              <svg
+                className="w-12 h-12 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
             </div>
           </div>
 
-          <h1 className="font-heading text-wosnik-dark text-4xl md:text-5xl font-normal mb-6">
-            Thank You!
+          {/* Heading */}
+          <h1 className="font-heading text-wosnik-dark text-4xl md:text-5xl lg:text-6xl font-normal mb-6">
+            Thank You for Contacting Us
           </h1>
 
-          <p className="font-body text-wosnik-dark text-lg mb-4">
-            We've received your message and appreciate you contacting us.
+          {/* Subheading */}
+          <p className="font-body text-gray-700 text-xl md:text-2xl mb-8">
+            We've received your message and will respond shortly.
           </p>
 
-          <p className="font-body text-gray-600 text-base mb-8">
-            One of our experienced attorneys will review your case and get back to you as soon as possible. We typically respond within 24 hours during business days.
-          </p>
-
-          <div className="bg-wosnik-accent/10 border border-wosnik-accent/30 rounded-lg p-6 mb-8">
-            <p className="font-body text-wosnik-dark font-semibold mb-2">
-              Need Immediate Assistance?
+          {/* Message */}
+          <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <p className="font-body text-gray-700 text-lg leading-relaxed mb-4">
+              Your consultation request has been successfully submitted. A member of our team will review your 
+              information and contact you within 24 hours to discuss your case.
             </p>
-            <a
-              href="tel:6784036418"
-              className="font-heading text-wosnik-accent text-2xl font-semibold hover:opacity-80 transition-opacity"
-            >
-              (678) 403-6418
-            </a>
-            <p className="font-body text-gray-600 text-sm mt-2">
-              Available 24/7
+            <p className="font-body text-gray-700 text-lg leading-relaxed mb-4">
+              At Liberty Law, P.C., we understand the urgency of criminal matters. If you need immediate assistance, 
+              please don't hesitate to call us directly.
+            </p>
+            <p className="font-body text-gray-700 text-lg leading-relaxed">
+              We look forward to speaking with you and providing the strong legal defense you deserve.
             </p>
           </div>
 
-          <a
-            href="/"
-            className="inline-block bg-wosnik-accent hover:bg-wosnik-accent/80 text-wosnik-dark font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent transition-all duration-150 uppercase tracking-[2px]"
-          >
-            Return to Homepage
-          </a>
+          {/* Call to Action */}
+          <div className="space-y-6">
+            <div>
+              <p className="font-body text-gray-700 text-base mb-4">
+                Need immediate assistance?
+              </p>
+              <a
+                href="tel:6302836421"
+                className="inline-block bg-wosnik-accent hover:bg-wosnik-accent/80 text-white font-inter font-medium text-base px-10 py-4 rounded-full border border-wosnik-accent transition-all duration-150 uppercase tracking-[2px]"
+              >
+                Call (630) 283-6421
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="/lp-criminal-attorney-il"
+                className="inline-block font-body text-wosnik-dark hover:text-wosnik-accent transition-colors text-base underline"
+              >
+                ← Return to Homepage
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="w-full bg-wosnik-dark py-8 mt-auto">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center">
+            <p className="font-body text-white text-sm">
+              © Liberty Law P.C. - 2025, All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
