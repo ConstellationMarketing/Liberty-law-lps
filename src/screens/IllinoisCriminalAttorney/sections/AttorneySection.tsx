@@ -13,12 +13,9 @@ export const AttorneySection = (): JSX.Element => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="relative">
             <img
-              src="/david-liberty-photo.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F3882d3e3483c4524a873012d9c8cd4b8?format=webp&width=800"
               alt="Attorney David Liberty"
               className="w-full h-auto rounded-lg shadow-lg object-cover"
-              onError={(e) => {
-                e.currentTarget.src = "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&h=1000&fit=crop";
-              }}
             />
           </div>
 
