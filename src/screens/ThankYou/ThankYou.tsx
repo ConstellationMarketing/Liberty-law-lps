@@ -67,27 +67,45 @@ export const ThankYou = (): JSX.Element => {
 
           {/* Heading */}
           <h1 className="font-heading text-wosnik-dark text-4xl md:text-5xl lg:text-6xl font-normal mb-6">
-            Thank You for Contacting Us
+            Your Request Has Been Received
           </h1>
 
           {/* Subheading */}
-          <p className="font-body text-gray-700 text-xl md:text-2xl mb-8">
-            We've received your message and will respond shortly.
+          <p className="font-body text-gray-700 text-xl md:text-2xl mb-12">
+            A member of our team will contact you shortly.
           </p>
 
-          {/* Message */}
+          {/* Next Steps */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
-            <p className="font-body text-gray-700 text-lg leading-relaxed mb-4">
-              Your consultation request has been successfully submitted. A member of our team will review your 
-              information and contact you within 24 hours to discuss your case.
-            </p>
-            <p className="font-body text-gray-700 text-lg leading-relaxed mb-4">
-              At Liberty Law, P.C., we understand the urgency of criminal matters. If you need immediate assistance, 
-              please don't hesitate to call us directly.
-            </p>
-            <p className="font-body text-gray-700 text-lg leading-relaxed">
-              We look forward to speaking with you and providing the strong legal defense you deserve.
-            </p>
+            <h2 className="font-heading text-wosnik-dark text-2xl md:text-3xl font-normal mb-6">
+              Next Steps:
+            </h2>
+            <div className="space-y-4 text-left max-w-2xl mx-auto">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-8 h-8 bg-wosnik-accent rounded-full flex items-center justify-center mr-4 mt-1">
+                  <span className="text-white font-bold">1</span>
+                </div>
+                <p className="font-body text-gray-700 text-lg leading-relaxed">
+                  Watch for a call or email reply
+                </p>
+              </div>
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-8 h-8 bg-wosnik-accent rounded-full flex items-center justify-center mr-4 mt-1">
+                  <span className="text-white font-bold">2</span>
+                </div>
+                <p className="font-body text-gray-700 text-lg leading-relaxed">
+                  Prepare any criminal case documents or notices
+                </p>
+              </div>
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-8 h-8 bg-wosnik-accent rounded-full flex items-center justify-center mr-4 mt-1">
+                  <span className="text-white font-bold">3</span>
+                </div>
+                <p className="font-body text-gray-700 text-lg leading-relaxed">
+                  We'll outline next steps and a clear legal plan
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Call to Action */}
