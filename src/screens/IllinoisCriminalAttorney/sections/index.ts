@@ -1,0 +1,9 @@
+export { HighlightBoxesSection } from "./HighlightBoxesSection";
+export { ClientCategoriesSection } from "./ClientCategoriesSection";
+export { CriminalDefenseServicesSection } from "./CriminalDefenseServicesSection";
+export { AboutUsSection } from "./AboutUsSection";
+export { AttorneySection } from "./AttorneySection";
+export { WhyChooseUsSection } from "./WhyChooseUsSection";
+export { ContactSection } from "./ContactSection";
+export { CallToActionMainSection } from "./CallToActionMainSection";
+export { FooterSection } from "./FooterSection";
