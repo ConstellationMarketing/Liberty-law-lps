@@ -19,12 +19,9 @@ const IllinoisHeroSection = (): JSX.Element => {
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
             <img
-              src="/liberty-law-logo.png"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F5af7e492db8347e48dcdefbb3332a950?format=webp&width=400"
               alt="Liberty Law P.C."
               className="h-10 w-auto object-contain"
-              onError={(e) => {
-                e.currentTarget.src = "/wosnik-law-logo-white-gold-min.png";
-              }}
             />
           </div>
 
