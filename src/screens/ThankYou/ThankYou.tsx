@@ -5,7 +5,7 @@ export const ThankYou = (): JSX.Element => {
   return (
     <div className="w-full min-h-screen bg-wosnik-light">
       <Helmet>
-        <title>Criminal Defense & Real Estate — Liberty Law</title>
+        <title>Liberty Law P.C.</title>
         <meta
           name="description"
           content="Thank you for contacting Liberty Law, P.C. We'll respond to your consultation request within 24 hours."
