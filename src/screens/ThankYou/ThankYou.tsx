@@ -10,6 +10,15 @@ export const ThankYou = (): JSX.Element => {
           name="description"
           content="Thank you for contacting Liberty Law, P.C. We'll respond to your consultation request within 24 hours."
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Liberty Law P.C." />
+        <meta property="og:description" content="Thank you for contacting Liberty Law, P.C. We'll respond to your consultation request within 24 hours." />
+        <meta property="og:image" content="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F5af7e492db8347e48dcdefbb3332a950?format=webp&width=1200" />
+        <meta property="og:site_name" content="Liberty Law P.C." />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Liberty Law P.C." />
+        <meta name="twitter:description" content="Thank you for contacting Liberty Law, P.C. We'll respond to your consultation request within 24 hours." />
+        <meta name="twitter:image" content="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F5af7e492db8347e48dcdefbb3332a950?format=webp&width=1200" />
       </Helmet>
       {/* Navigation Bar */}
       <div className="relative w-full bg-white border-b border-gray-200">
