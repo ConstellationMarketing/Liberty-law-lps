@@ -21,7 +21,7 @@ export const ContactSection = (): JSX.Element => {
             </h3>
             <form
               id="contact-form"
-              name="criminal-form"
+              name="consultation-request"
               action="https://usebasin.com/f/700c92dca26f"
               method="POST"
               className="space-y-4"
