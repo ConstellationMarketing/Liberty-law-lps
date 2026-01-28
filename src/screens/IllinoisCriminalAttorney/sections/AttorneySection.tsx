@@ -22,29 +22,19 @@ export const AttorneySection = (): JSX.Element => {
           <div>
             <div className="space-y-4">
               <p className="font-body text-gray-700 leading-relaxed">
-                David Liberty is a skilled criminal defense attorney serving clients in Naperville and the surrounding 
-                Illinois counties. With years of experience in criminal law, David has successfully defended clients 
-                facing a wide range of charges, from misdemeanors to serious felonies.
+                Attorney David Liberty is an Qualified Naperville criminal defense lawyer who has represented clients facing felony and misdemeanor charges across DuPage, Kane, Will, Kendall, and Grundy counties.
               </p>
 
               <p className="font-body text-gray-700 leading-relaxed">
-                David's background includes extensive work in both state and federal courts. He has handled complex 
-                criminal matters including DUI defense, drug crimes, theft offenses, violent crimes, and white-collar 
-                criminal cases. His approach is built on thorough preparation, strategic thinking, and aggressive advocacy 
-                for every client.
+                His background as a former prosecutor and extensive knowledge in criminal defense give him unique insight into how cases are evaluated and tried. This allows him to craft aggressive, tailored defense strategies for each client.
               </p>
 
               <p className="font-body text-gray-700 leading-relaxed">
-                A graduate of Chicago-Kent College of Law (2014), David is licensed to practice in all Illinois state 
-                courts and brings a deep understanding of local court procedures, prosecutors, and judges throughout the 
-                Naperville area. This local insight is invaluable in developing effective defense strategies tailored to 
-                each jurisdiction.
+                David earned his Juris Doctor from Chicago-Kent College of Law in 2014, where he was recognized for outstanding service to the legal community. His career also includes work with the Cook County Public Defender's Homicide Task Force, providing him with hands-on knowledge in complex criminal matters.
               </p>
 
               <p className="font-body text-gray-700 leading-relaxed">
-                David is committed to protecting his clients' rights at every stage of the criminal process. Whether 
-                negotiating with prosecutors for reduced charges or fighting for acquittal at trial, he approaches every 
-                case with dedication and a focus on achieving the best possible outcome for his clients.
+                From felony charges to misdemeanor cases, Attorney David Liberty combines strategic thinking, in-depth legal knowledge, and relentless advocacy to protect every client's rights, freedom, and future.
               </p>
             </div>
 
