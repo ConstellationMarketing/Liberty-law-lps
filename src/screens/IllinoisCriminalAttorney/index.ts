@@ -1,0 +1,1 @@
+export { IllinoisCriminalAttorney } from "./IllinoisCriminalAttorney";
