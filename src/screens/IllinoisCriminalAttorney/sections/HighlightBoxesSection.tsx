@@ -4,19 +4,19 @@ export const HighlightBoxesSection = (): JSX.Element => {
   const highlights = [
     {
       title: "Proven Criminal Defense Results",
-      description: "Track record of successful outcomes in criminal cases throughout DuPage, Kane, and Will Counties."
+      description: "Trusted defense lawyer with a strong track record of favorable outcomes in felony and misdemeanor criminal cases."
     },
     {
       title: "Local Naperville Advocacy",
-      description: "Deep knowledge of local courts, prosecutors, and legal procedures in the Naperville area."
+      description: "Dedicated representation for clients in Naperville and surrounding counties with personalized attention and strategic legal support."
     },
     {
       title: "Trusted Defense for Serious Charges",
-      description: "Experienced representation for felonies, misdemeanors, DUI, and post-conviction matters."
+      description: "Aggressive criminal defense in felony and misdemeanor matters, protecting your rights and future throughout DuPage, Kane, Will, Kendall, Grundy, and DeKalb counties."
     },
     {
       title: "Free Case Evaluation",
-      description: "No-obligation consultation to review your case and discuss your legal options."
+      description: "Speak directly with an Accomplished criminal defense attorney today to review your case and explore your options at no cost."
     }
   ];
 
