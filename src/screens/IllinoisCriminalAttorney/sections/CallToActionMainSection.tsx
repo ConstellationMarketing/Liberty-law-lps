@@ -6,10 +6,10 @@ export const CallToActionMainSection = (): JSX.Element => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
-            <h2 className="font-heading text-wosnik-dark text-2xl md:text-3xl lg:text-4xl mb-2">
+            <h2 className="font-heading text-white text-2xl md:text-3xl lg:text-4xl mb-2">
               Call Now for Criminal Case Help
             </h2>
-            <p className="font-body text-wosnik-dark/80 text-sm md:text-base">
+            <p className="font-body text-white/90 text-sm md:text-base">
               Free consultations available — speak with an experienced criminal defense attorney today
             </p>
           </div>
