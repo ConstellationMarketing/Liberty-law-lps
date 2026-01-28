@@ -12,27 +12,19 @@ export const AboutUsSection = (): JSX.Element => {
             
             <div className="space-y-4">
               <p className="font-body text-gray-700 leading-relaxed">
-                At Liberty Law, P.C., we are dedicated to defending individuals charged with criminal offenses 
-                in Naperville and throughout DuPage, Kane, Will, Kendall, Grundy, and DeKalb Counties. When your 
-                freedom, reputation, and future are on the line, you need an experienced advocate who understands 
-                the stakes and fights tirelessly on your behalf.
+                Liberty Law, P.C. is a Naperville-based law firm dedicated exclusively to criminal defense. We represent clients facing felony and misdemeanor charges across Naperville and the surrounding counties, ensuring their rights are protected at every stage of the legal process.
               </p>
 
               <p className="font-body text-gray-700 leading-relaxed">
-                Our firm has a proven track record of achieving favorable outcomes for clients facing a wide range 
-                of criminal charges — from DUI and traffic violations to serious felonies. We handle every case 
-                with the attention, preparation, and aggressive representation it deserves.
+                With a proven track record of successful outcomes in state courts, our firm is recognized for providing strategic, results-driven advocacy in criminal defense cases. We focus on delivering personalized solutions tailored to each client's unique situation.
               </p>
 
               <p className="font-body text-gray-700 leading-relaxed">
-                We believe that everyone deserves a strong defense, no matter the charge. Our approach combines 
-                thorough investigation, strategic negotiation, and courtroom advocacy to protect your rights and 
-                pursue the best possible resolution.
+                Our founding attorney brings extensive Competence and a relentless commitment to defending your rights. From arraignment to trial and post-conviction proceedings, we provide knowledgeable guidance and aggressive representation in every case.
               </p>
 
               <p className="font-body text-gray-700 leading-relaxed">
-                Whether you're facing your first criminal charge or dealing with complex legal issues, Liberty Law, 
-                P.C. is here to guide you through the process with clarity, confidence, and commitment.
+                Whether you are facing arrest, navigating complex criminal charges, or exploring post-conviction options, Liberty Law, P.C. is here to help you understand your rights and build a strong defense to protect your freedom and future.
               </p>
             </div>
           </div>
