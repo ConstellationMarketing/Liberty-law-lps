@@ -5,7 +5,7 @@ export const ThankYou = (): JSX.Element => {
   return (
     <div className="w-full min-h-screen bg-wosnik-light">
       <Helmet>
-        <title>Thank You - Liberty Law, P.C.</title>
+        <title>Criminal Defense & Real Estate — Liberty Law</title>
         <meta
           name="description"
           content="Thank you for contacting Liberty Law, P.C. We'll respond to your consultation request within 24 hours."
@@ -23,7 +23,7 @@ export const ThankYou = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col items-end">
-            <p className="font-body text-[#04304c] text-xs uppercase tracking-wider">Naperville's Trusted Criminal Defense</p>
+            <p className="font-body text-[#04304c] text-xs uppercase tracking-wider font-bold">Naperville's Trusted Criminal Defense</p>
             <a
               href="tel:6302836421"
               className="font-body text-wosnik-dark hover:text-wosnik-accent transition-colors text-lg font-semibold"
