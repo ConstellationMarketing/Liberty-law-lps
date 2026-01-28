@@ -53,11 +53,11 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ['"Montserrat"', 'sans-serif'],
-        heading: ['"Montserrat"', 'sans-serif'],
-        body: ['"Montserrat"', 'sans-serif'],
-        inter: ['"Montserrat"', 'sans-serif'],
-        libre: ['"Montserrat"', 'sans-serif'],
+        sans: ['"Open Sans"', 'sans-serif'],
+        heading: ['"Playfair Display"', 'serif'],
+        body: ['"Open Sans"', 'sans-serif'],
+        inter: ['"Open Sans"', 'sans-serif'],
+        libre: ['"Playfair Display"', 'serif'],
       },
       keyframes: {
         "accordion-down": {
