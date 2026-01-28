@@ -15,7 +15,7 @@ const IllinoisHeroSection = (): JSX.Element => {
   return (
     <section className="relative w-full min-h-[500px] bg-wosnik-dark">
       {/* Navigation Bar */}
-      <div className="relative w-full bg-wosnik-dark border-b border-wosnik-accent/20">
+      <div className="relative w-full bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
             <img
@@ -29,7 +29,7 @@ const IllinoisHeroSection = (): JSX.Element => {
             <p className="font-body text-[#04304c] text-xs uppercase tracking-wider">Naperville's Trusted Criminal Defense</p>
             <a
               href="tel:6302836421"
-              className="font-body text-white hover:text-wosnik-accent transition-colors text-lg font-semibold"
+              className="font-body text-wosnik-dark hover:text-wosnik-accent transition-colors text-lg font-semibold"
             >
               (630) 283-6421
             </a>
