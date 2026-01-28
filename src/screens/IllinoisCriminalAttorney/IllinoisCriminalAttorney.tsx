@@ -67,7 +67,7 @@ export const IllinoisCriminalAttorney = (): JSX.Element => {
   return (
     <div className="w-full bg-wosnik-light">
       <Helmet>
-        <title>Naperville Criminal Defense Lawyer - Liberty Law, P.C.</title>
+        <title>Criminal Defense & Real Estate — Liberty Law</title>
         <meta
           name="description"
           content="Facing felony or misdemeanor charges in Naperville? Liberty Law, P.C. provides aggressive, results-driven criminal defense. Free consultations available - call today."
