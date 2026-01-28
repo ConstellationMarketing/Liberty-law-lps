@@ -39,12 +39,9 @@ export const AboutUsSection = (): JSX.Element => {
 
           <div className="relative">
             <img
-              src="/liberty-law-team.jpg"
-              alt="Liberty Law P.C. Team"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F8708750d900d46d18b1a6e678ddc0d80?format=webp&width=800"
+              alt="Liberty Law P.C. - Attorney consulting with clients"
               className="w-full h-auto rounded-lg shadow-lg object-cover"
-              onError={(e) => {
-                e.currentTarget.src = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop";
-              }}
             />
           </div>
         </div>
