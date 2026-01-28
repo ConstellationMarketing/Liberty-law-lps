@@ -28,8 +28,7 @@ export const CriminalDefenseServicesSection = (): JSX.Element => {
             Start With Proven Criminal Defense
           </h2>
           <p className="font-body text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
-            You're not alone — our skilled defense team stands by your side to protect your rights, 
-            challenge the prosecution's case, and fight for the best possible outcome in your criminal matter.
+            You're not alone — our skilled defense team stands by your side from arrest to resolution.
           </p>
         </div>
 
