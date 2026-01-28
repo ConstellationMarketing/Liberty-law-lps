@@ -7,8 +7,8 @@
     </style>
 </head>
 <body>
-    <!-- This hidden form is for Formspree integration -->
-    <form action="https://usebasin.com/f/BASIN_FORM_ID" method="POST" hidden>
+    <!-- This hidden form is for Netlify integration -->
+    <form name="consultation-request" method="POST" data-netlify="true" action="/thank-you" hidden>
         <input type="text" name="firstName" />
         <input type="text" name="lastName" />
         <input type="tel" name="phone" />
