@@ -41,13 +41,14 @@ export const ContactSection = (): JSX.Element => {
               Request a Free Consultation
             </h3>
 
-            <form 
+            <form
               onSubmit={handleSubmit}
               action="https://formsubmit.co/david@libertylawfirm.net"
               method="POST"
             >
               <input type="hidden" name="_subject" value="New consultation request from Liberty Law website" />
               <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value={`${window.location.origin}/thank-you`} />
               
               <div className="space-y-4">
                 <div>
