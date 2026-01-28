@@ -1,14 +1,15 @@
 import React from "react";
-import { CallToActionMainSection } from "../Frame/sections/CallToActionMainSection";
-import { ContactSection } from "../Frame/sections/ContactSection";
-import { FooterSection } from "../Frame/sections/FooterSection";
-import { ClientTestimonialsSection } from "../Frame/sections/ClientTestimonialsSection";
-import { CriminalDefenseServicesSection } from "../Frame/sections/CriminalDefenseServicesSection";
-import { WhyUsSection } from "../Frame/sections/WhyUsSection";
-import { WhyChooseUsSection } from "../Frame/sections/WhyChooseUsSection";
-import { AboutUsSection } from "../Frame/sections/AboutUsSection";
-import { AttorneySection } from "../Frame/sections/AttorneySection";
-import { BadgesSection } from "../Frame/sections/BadgesSection";
+import {
+  HighlightBoxesSection,
+  ClientCategoriesSection,
+  CriminalDefenseServicesSection,
+  AboutUsSection,
+  AttorneySection,
+  WhyChooseUsSection,
+  ContactSection,
+  CallToActionMainSection,
+  FooterSection
+} from "./sections";
 
 const IllinoisHeroSection = (): JSX.Element => {
   return (
@@ -18,19 +19,22 @@ const IllinoisHeroSection = (): JSX.Element => {
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
             <img
-              src="/wosnik-law-logo-white-gold-min.png"
-              alt="Wosnik Law"
+              src="/liberty-law-logo.png"
+              alt="Liberty Law P.C."
               className="h-10 w-auto object-contain"
+              onError={(e) => {
+                e.currentTarget.src = "/wosnik-law-logo-white-gold-min.png";
+              }}
             />
           </div>
 
           <div className="flex flex-col items-end">
-            <p className="font-body text-wosnik-accent text-xs uppercase tracking-wider">Se habla español Call 24/7</p>
+            <p className="font-body text-wosnik-accent text-xs uppercase tracking-wider">Naperville's Trusted Criminal Defense</p>
             <a
-              href="tel:6784036418"
+              href="tel:6302836421"
               className="font-body text-white hover:text-wosnik-accent transition-colors text-lg font-semibold"
             >
-              (678) 403-6418
+              (630) 283-6421
             </a>
           </div>
         </div>
@@ -39,22 +43,25 @@ const IllinoisHeroSection = (): JSX.Element => {
       {/* Hero Content */}
       <div className="relative w-full max-w-7xl mx-auto px-4 py-16 md:py-24 text-center">
         <h1 className="font-heading text-white text-4xl md:text-5xl lg:text-6xl font-normal leading-tight mb-4">
-          Illinois Criminal Defense Attorney
+          Strong Criminal Defense When Your Freedom Is at Stake
         </h1>
 
         <h2 className="font-body text-wosnik-accent text-xl md:text-2xl font-semibold mb-6">
-          Expert Legal Representation for Criminal Charges in Illinois
+          Naperville Criminal Defense Attorneys - Liberty Law, P.C.
         </h2>
 
         <p className="font-body text-white text-base max-w-3xl mx-auto leading-relaxed mb-8">
-          Facing criminal charges in Illinois? Our experienced criminal defense attorneys provide aggressive representation to protect your rights and freedom. With proven success in Illinois courts, we fight for the best possible outcome in your case.
+          When you're facing criminal charges in Naperville or surrounding Illinois counties, you need a skilled
+          defense attorney who will fight to protect your rights and your future. Liberty Law, P.C. provides
+          aggressive, strategic representation for clients charged with felonies, misdemeanors, DUI, and other
+          criminal offenses throughout DuPage, Kane, Will, Kendall, Grundy, and DeKalb Counties.
         </p>
 
         <button
           className="bg-wosnik-accent hover:bg-wosnik-accent/80 text-wosnik-dark font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent transition-all duration-150 uppercase tracking-[2px] whitespace-nowrap inline-block"
           onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
         >
-          Get Your Free Consultation
+          Request Free Consultation
         </button>
       </div>
     </section>
