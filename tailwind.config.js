@@ -53,19 +53,11 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: [
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif",
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
-        ],
-        heading: ['"Libre Baskerville"', 'serif'],
-        body: ['"Open Sans"', 'sans-serif'],
-        inter: ['"Inter UI"', 'sans-serif'],
-        libre: ['"Libre Baskerville"', 'serif'],
+        sans: ['"Montserrat"', 'sans-serif'],
+        heading: ['"Montserrat"', 'sans-serif'],
+        body: ['"Montserrat"', 'sans-serif'],
+        inter: ['"Montserrat"', 'sans-serif'],
+        libre: ['"Montserrat"', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {
