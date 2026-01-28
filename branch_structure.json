@@ -1,0 +1,24 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "main",
+    "mystic-hub",
+    "mystic-oasis",
+    "nova-flow-renders",
+    "origin"
+  ],
+  "parent": {
+    "main": null,
+    "mystic-hub": "main",
+    "mystic-oasis": "main",
+    "nova-flow-renders": "main",
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "mystic-hub",
+    "mystic-oasis",
+    "nova-flow-renders",
+    "origin"
+  ]
+}
