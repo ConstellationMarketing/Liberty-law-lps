@@ -192,9 +192,9 @@ export const ContactSection = (): JSX.Element => {
             {/* Google Maps Embed */}
             <div className="rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.5!2d-88.1487!3d41.7753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e57c5c5c5c5c5%3A0x5c5c5c5c5c5c5c5!2s1700%20Park%20St%2C%20Naperville%2C%20IL%2060563!5e0!3m2!1sen!2sus!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.367823234473!2d-88.15063892297552!3d41.798836071250534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e57aaadbc6c4d%3A0x60da79918247a767!2sLiberty%20Law%2C%20P.C.!5e0!3m2!1sen!2srs!4v1769620403275!5m2!1sen!2srs"
                 width="100%"
-                height="300"
+                height="450"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
