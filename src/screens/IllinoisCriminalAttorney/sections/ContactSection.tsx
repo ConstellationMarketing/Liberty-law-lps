@@ -8,13 +8,6 @@ export const ContactSection = (): JSX.Element => {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Form submission will be handled by FormSubmit.co
-    const form = e.target as HTMLFormElement;
-    form.submit();
-  };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
