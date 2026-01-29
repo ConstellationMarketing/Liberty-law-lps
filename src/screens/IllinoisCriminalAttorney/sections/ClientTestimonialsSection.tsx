@@ -66,7 +66,7 @@ export const ClientTestimonialsSection = (): JSX.Element => {
                   </div>
                   <span className="text-wosnik-accent font-body text-2xl font-bold">G</span>
                 </div>
-                <p className="font-body text-gray-700 text-sm leading-relaxed line-clamp-4">
+                <p className="font-body text-gray-700 text-sm leading-relaxed">
                   {testimonial.text}
                 </p>
               </CardContent>
