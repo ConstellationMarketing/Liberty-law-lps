@@ -1,7 +1,35 @@
 import React from "react";
 import { Phone, MapPin } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export const ContactSection = (): JSX.Element => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      // Submit to UseBasin
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        // Redirect to custom thank you page
+        navigate("/thank-you");
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("There was an error submitting the form. Please try again.");
+    }
+  };
+
   return (
     <section id="contact" className="w-full bg-wosnik-light py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4">
