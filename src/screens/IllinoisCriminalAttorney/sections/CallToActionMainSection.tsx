@@ -17,7 +17,7 @@ export const CallToActionMainSection = (): JSX.Element => {
           <div className="flex-shrink-0">
             <a
               href="tel:6302836421"
-              className="bg-wosnik-dark hover:bg-wosnik-dark/90 text-white font-inter font-medium text-base md:text-lg px-8 py-4 rounded-full border-2 border-wosnik-dark transition-all duration-150 inline-block whitespace-nowrap"
+              className="bg-wosnik-dark hover:bg-black text-white font-inter font-medium text-base md:text-lg px-8 py-4 rounded-full border-2 border-wosnik-dark hover:border-black transition-all duration-150 inline-block whitespace-nowrap"
             >
               (630) 283-6421
             </a>
