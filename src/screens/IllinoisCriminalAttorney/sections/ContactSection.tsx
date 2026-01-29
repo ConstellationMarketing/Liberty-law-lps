@@ -175,7 +175,7 @@ export const ContactSection = (): JSX.Element => {
                       href="tel:6302836421"
                       className="font-body text-wosnik-accent hover:text-wosnik-accent/80 text-lg"
                     >
-                      (630) 283-6421
+                      Call Now (630) 283-6421
                     </a>
                   </div>
                 </div>
