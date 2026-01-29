@@ -9,7 +9,7 @@ export const HeroSection = (): JSX.Element => {
           <div className="flex items-center">
             <img
               src="/wosnik-law-logo-white-gold-min.png"
-              alt="Wosnik Law"
+              alt="Liberty Law P.C."
               className="h-10 w-auto object-contain"
             />
           </div>
@@ -33,11 +33,11 @@ export const HeroSection = (): JSX.Element => {
         </h1>
 
         <h2 className="font-body text-wosnik-accent text-xl md:text-2xl font-semibold mb-6">
-          Georgia Criminal Defense Attorneys — Wosnik Law
+          Naperville Criminal Defense Attorneys - Liberty Law P.C.
         </h2>
 
         <p className="font-body text-white text-base max-w-3xl mx-auto leading-relaxed mb-8">
-          With over 35 years of combined experience, Wosnik Law delivers aggressive criminal defense, DUI representation, and family law services to protect your rights and secure the best possible outcome.
+          Liberty Law P.C. delivers aggressive criminal defense, DUI representation, and family law services to protect your rights and secure the best possible outcome.
         </p>
 
         <button
