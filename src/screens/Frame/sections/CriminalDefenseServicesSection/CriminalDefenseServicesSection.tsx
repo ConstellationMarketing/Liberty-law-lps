@@ -58,7 +58,7 @@ export const CriminalDefenseServicesSection = (): JSX.Element => {
             </a>
 
             <p className="font-body text-wosnik-dark text-base">
-              speak directly with an experienced Georgia attorney today.
+              speak directly with an experienced Illinois attorney today.
             </p>
           </div>
         </div>
