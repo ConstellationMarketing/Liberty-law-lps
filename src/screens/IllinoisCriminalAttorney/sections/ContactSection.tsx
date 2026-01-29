@@ -70,6 +70,7 @@ export const ContactSection = (): JSX.Element => {
             <form
               name="consultation-request"
               method="POST"
+              action="/thank-you"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
