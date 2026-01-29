@@ -35,7 +35,7 @@ export const ThankYou = (): JSX.Element => {
             <p className="font-body text-[#04304c] text-xs uppercase tracking-wider font-bold">Naperville's Trusted Criminal Defense</p>
             <a
               href="tel:6302836421"
-              className="font-body text-wosnik-dark hover:text-wosnik-accent transition-colors text-lg font-semibold border-2 border-wosnik-accent rounded-md px-4 py-2 inline-block mt-1"
+              className="font-body text-wosnik-dark hover:text-wosnik-accent transition-colors text-lg font-semibold border-2 border-wosnik-dark rounded-md px-4 py-2 inline-block mt-1"
             >
               (630) 283-6421
             </a>
