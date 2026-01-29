@@ -98,7 +98,7 @@ export const ThankYou = (): JSX.Element => {
               </p>
               <a
                 href="tel:6302836421"
-                className="inline-block bg-wosnik-accent hover:bg-wosnik-accent/80 text-white font-inter font-medium text-base px-10 py-4 rounded-full border border-wosnik-accent transition-all duration-150 uppercase tracking-[2px]"
+                className="inline-block bg-wosnik-accent hover:bg-black text-white font-inter font-medium text-base px-10 py-4 rounded-full border border-wosnik-accent hover:border-black transition-all duration-150 uppercase tracking-[2px]"
               >
                 Call (630) 283-6421
               </a>
