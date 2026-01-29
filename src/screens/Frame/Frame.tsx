@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import {
   HighlightBoxesSection,
   ClientCategoriesSection,
+  ClientTestimonialsSection,
   CriminalDefenseServicesSection,
   AboutUsSection,
   AttorneySection,
@@ -85,6 +86,7 @@ export const Frame = (): JSX.Element => {
         <WhyChooseUsSection />
         <AboutUsSection />
         <AttorneySection />
+        <ClientTestimonialsSection />
         <ClientCategoriesSection />
         <CallToActionMainSection />
         <ContactSection />
