@@ -53,8 +53,8 @@ export const ContactSection = (): JSX.Element => {
               action="https://usebasin.com/f/700c92dca26f"
               method="POST"
               className="space-y-4"
+              onSubmit={handleSubmit}
             >
-              <input type="hidden" name="_redirect" value="/thank-you" />
               <div>
                 <input
                   type="text"
