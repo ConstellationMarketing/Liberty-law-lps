@@ -10,6 +10,27 @@ export const ClientTestimonialsSection = (): JSX.Element => {
       timeAgo: "8 months ago",
       text: "David assisted me with a traffic matter. His courteous, prompt, and professional manner made it easy. His fees were at the top of the scale I'd be willing to pay, but he gave a discount for upfront payment. Thank you, David. I'll recommend you to anyone who needs your services.",
       source: "Google"
+    },
+    {
+      name: "Jenest Espino",
+      rating: 5,
+      timeAgo: "6 months ago",
+      text: "David was great in helping my boyfriend and I close on a house. He is a very patient man and very helpful in understanding that my boyfriend preferred to email/text instead of call. During the closing process, David helped us understand how everything works in layman's terms. He also made sure to check in every now and then to see if the lenders would push through earlier, but again, David was very patient even when we were not.",
+      source: "Google"
+    },
+    {
+      name: "Juli Buckles",
+      rating: 5,
+      timeAgo: "4 months ago",
+      text: "David exceeded our expectations! We were selling our home in AZ and moving back to IL to be with family and had some concerns about doing all the necessary paperwork remotely. We discussed our concerns with David and he quickly put us at ease. David provided excellent service, and was quick to respond to all of our questions using emails, texts and his secure communication software application. Due to David's knowledge and experience, the closing on our new home in Illinois was seamless. David thank you for helping make our dream come true!",
+      source: "Google"
+    },
+    {
+      name: "Michael Mejia",
+      rating: 5,
+      timeAgo: "3 months ago",
+      text: "David at liberty law was absolutely amazing! They made selling my house fast and seemless. We had a bit of a weird situation where we needed to close in a hurry. David had it all done and ready for us in a 10 day time-frame. I know this was not normal for everyone but this is how fast and accurate they are when working for you. I will always recommend them. Thank you again for all the hard work.",
+      source: "Google"
     }
   ];
 
