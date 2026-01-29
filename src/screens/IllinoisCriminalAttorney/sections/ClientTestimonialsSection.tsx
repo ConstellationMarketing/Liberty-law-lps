@@ -69,14 +69,6 @@ export const ClientTestimonialsSection = (): JSX.Element => {
                 <p className="font-body text-gray-700 text-sm leading-relaxed line-clamp-4">
                   {testimonial.text}
                 </p>
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=Google&query_place_id=ChIJTWy8rapXDogRZ6dHgpF52mA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-body text-wosnik-accent hover:underline text-sm mt-2 inline-block"
-                >
-                  Read more
-                </a>
               </CardContent>
             </Card>
           ))}
