@@ -6,7 +6,7 @@ export const FooterSection = (): JSX.Element => {
       <div className="container mx-auto max-w-7xl px-4">
         <div className="text-center">
           <p className="font-body text-wosnik-dark text-sm">
-            © Wosnik Law, LLC - 2026, All Rights Reserved.
+            © Liberty Law P.C. - 2026, All Rights Reserved.
           </p>
         </div>
       </div>
