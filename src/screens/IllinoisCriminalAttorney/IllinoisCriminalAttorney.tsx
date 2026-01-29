@@ -90,8 +90,8 @@ export const IllinoisCriminalAttorney = (): JSX.Element => {
         <WhyChooseUsSection />
         <AboutUsSection />
         <AttorneySection />
-        <ClientTestimonialsSection />
         <ClientCategoriesSection />
+        <ClientTestimonialsSection />
         <CallToActionMainSection />
         <ContactSection />
         <FooterSection />
