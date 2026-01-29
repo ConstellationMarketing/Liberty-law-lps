@@ -21,17 +21,27 @@ export const ContactSection = (): JSX.Element => {
     e.preventDefault();
 
     const form = e.currentTarget;
-    const formDataToSend = new FormData(form);
+    const formData = new FormData(form);
+
+    // Convert FormData to URL-encoded string for Netlify
+    const body = new URLSearchParams();
+    formData.forEach((value, key) => {
+      body.append(key, value.toString());
+    });
 
     try {
-      await fetch("/", {
+      const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formDataToSend as any).toString(),
+        body: body.toString(),
       });
 
-      // Redirect to custom thank you page
-      navigate("/thank-you");
+      if (response.ok) {
+        // Redirect to custom thank you page
+        navigate("/thank-you");
+      } else {
+        throw new Error("Form submission failed");
+      }
     } catch (error) {
       console.error("Form submission error:", error);
       alert("There was an error submitting the form. Please try again.");
