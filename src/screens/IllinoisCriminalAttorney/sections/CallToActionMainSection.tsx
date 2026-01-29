@@ -19,7 +19,7 @@ export const CallToActionMainSection = (): JSX.Element => {
               href="tel:6302836421"
               className="bg-wosnik-dark hover:bg-black text-white font-inter font-medium text-base md:text-lg px-8 py-4 rounded-full border-2 border-wosnik-dark hover:border-black transition-all duration-150 inline-block whitespace-nowrap"
             >
-              (630) 283-6421
+              Call Now (630) 283-6421
             </a>
           </div>
         </div>
