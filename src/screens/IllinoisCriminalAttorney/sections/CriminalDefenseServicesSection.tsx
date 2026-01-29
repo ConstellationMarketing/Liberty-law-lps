@@ -49,7 +49,7 @@ export const CriminalDefenseServicesSection = (): JSX.Element => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="font-body text-gray-700 text-base mb-6">
+          <p className="font-body text-gray-700 text-lg md:text-xl font-medium mb-6">
             Ready to discuss your case? Call us today for a free consultation.
           </p>
           <a
