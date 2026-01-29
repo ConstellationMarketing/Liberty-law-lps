@@ -48,7 +48,7 @@ export const AboutUsSection = (): JSX.Element => {
               Years of Experience
             </div>
             <div className="text-white font-['Montserrat',Helvetica] mt-1 text-sm md:text-base">
-              Defending Clients in Georgia
+              Defending Clients in Illinois
             </div>
           </div>
           <div className="text-center">
