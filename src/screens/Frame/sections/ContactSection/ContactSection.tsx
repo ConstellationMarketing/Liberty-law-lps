@@ -26,6 +26,7 @@ export const ContactSection = (): JSX.Element => {
               method="POST"
               className="space-y-4"
             >
+              <input type="hidden" name="_redirect" value="/thank-you" />
               <div>
                 <input
                   type="text"
