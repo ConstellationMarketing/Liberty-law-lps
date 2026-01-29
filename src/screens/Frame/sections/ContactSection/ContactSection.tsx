@@ -7,7 +7,7 @@ export const ContactSection = (): JSX.Element => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading text-wosnik-dark text-3xl md:text-4xl font-normal mb-4">
-            Contact Wosnik Law, LLC
+            Contact Liberty Law P.C.
           </h2>
           <p className="font-body text-wosnik-dark text-lg">
             Call and speak with us today about your criminal or family law matter
@@ -127,7 +127,7 @@ export const ContactSection = (): JSX.Element => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Wosnik Law Office Location"
+            title="Liberty Law P.C. Office Location"
           ></iframe>
         </div>
       </div>
