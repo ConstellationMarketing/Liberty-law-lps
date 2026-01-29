@@ -67,20 +67,16 @@ export const Frame = (): JSX.Element => {
   return (
     <div className="w-full bg-wosnik-light">
       <Helmet>
-        <title>Liberty Law P.C.</title>
+        <title>Liberty Law P.C. – Criminal Defense Attorneys</title>
         <meta
           name="description"
-          content="Facing felony or misdemeanor charges in Naperville? Liberty Law, P.C. provides aggressive, results-driven criminal defense. Free consultations available - call today."
+          content="Liberty Law P.C. provides experienced criminal defense representation in Georgia. Call today for a consultation."
         />
+        <meta property="og:title" content="Liberty Law P.C. – Criminal Defense Attorneys" />
+        <meta property="og:description" content="Liberty Law P.C. provides experienced criminal defense representation in Georgia." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Liberty Law P.C." />
-        <meta property="og:description" content="Facing felony or misdemeanor charges in Naperville? Liberty Law, P.C. provides aggressive, results-driven criminal defense. Free consultations available - call today." />
-        <meta property="og:image" content="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F5af7e492db8347e48dcdefbb3332a950?format=webp&width=1200" />
-        <meta property="og:site_name" content="Liberty Law P.C." />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Liberty Law P.C." />
-        <meta name="twitter:description" content="Facing felony or misdemeanor charges in Naperville? Liberty Law, P.C. provides aggressive, results-driven criminal defense. Free consultations available - call today." />
-        <meta name="twitter:image" content="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F5af7e492db8347e48dcdefbb3332a950?format=webp&width=1200" />
+        <meta property="og:url" content="https://help.libertylawfirm.net/" />
+        <meta property="og:image" content="https://help.libertylawfirm.net/logo.png" />
       </Helmet>
       <div className="flex flex-col">
         <HeroSection />
