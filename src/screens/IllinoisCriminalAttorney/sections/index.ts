@@ -1,5 +1,6 @@
 export { HighlightBoxesSection } from "./HighlightBoxesSection";
 export { ClientCategoriesSection } from "./ClientCategoriesSection";
+export { ClientTestimonialsSection } from "./ClientTestimonialsSection";
 export { CriminalDefenseServicesSection } from "./CriminalDefenseServicesSection";
 export { AboutUsSection } from "./AboutUsSection";
 export { AttorneySection } from "./AttorneySection";
