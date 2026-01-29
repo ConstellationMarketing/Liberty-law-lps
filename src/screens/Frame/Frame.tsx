@@ -86,8 +86,8 @@ export const Frame = (): JSX.Element => {
         <WhyChooseUsSection />
         <AboutUsSection />
         <AttorneySection />
-        <ClientTestimonialsSection />
         <ClientCategoriesSection />
+        <ClientTestimonialsSection />
         <CallToActionMainSection />
         <ContactSection />
         <FooterSection />
