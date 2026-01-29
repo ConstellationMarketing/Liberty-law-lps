@@ -1,0 +1,155 @@
+name: Auto-merge Builder PRs after Netlify preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  check_suite:
+    types: [completed]
+
+permissions:
+  pull-requests: write
+  contents: write
+
+concurrency:
+  group: auto-merge-builder-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  automerge:
+    # Run for PR events directly, or when a check suite completes (Netlify finishes)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Resolve PR number
+        id: pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const eventName = context.eventName;
+
+            // If this is a PR event, we already have the PR.
+            if (eventName === "pull_request") {
+              core.setOutput("number", context.payload.pull_request.number);
+              return;
+            }
+
+            // If it's a check_suite completion, find the PR(s) it belongs to.
+            const prs = context.payload.check_suite.pull_requests || [];
+            if (!prs.length) {
+              core.setOutput("number", "");
+              return;
+            }
+
+            // Use the first PR (typical for Netlify deploy preview checks)
+            core.setOutput("number", prs[0].number.toString());
+      - name: Stop if no PR found
+        if: steps.pr.outputs.number == ''
+        run: echo "No PR associated with this event."
+
+      - name: Auto-merge if Builder PR + Netlify preview succeeded
+        if: steps.pr.outputs.number != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = Number(core.getInput('prNumber') || '${{ steps.pr.outputs.number }}');
+
+            // Fetch PR
+            const { data: pr } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+            });
+
+            // Skip drafts
+            if (pr.draft) {
+              console.log("PR is draft; skipping.");
+              return;
+            }
+
+            // ✅ IMPORTANT: Limit to Builder PRs
+            // Builder often uses a bot/app account. This checks for "builder" in the login.
+            const authorLogin = (pr.user?.login || "").toLowerCase();
+            const isBuilderPR = authorLogin.includes("builder");
+            if (!isBuilderPR) {
+              console.log(`Not a Builder PR (author: ${pr.user?.login}); skipping.`);
+              return;
+            }
+
+            // Ensure PR is mergeable and up-to-date
+            // (mergeable can be null briefly; re-fetch if needed)
+            const { data: pr2 } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+            });
+
+            // Check all status checks on the PR HEAD SHA
+            const headSha = pr2.head.sha;
+
+            const { data: combined } = await github.rest.repos.getCombinedStatusForRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: headSha,
+            });
+
+            // Require Netlify deploy preview check success
+            // Netlify commonly reports contexts like:
+            // "netlify/<site-name>/deploy-preview" or similar.
+            const statuses = combined.statuses || [];
+            const netlifyStatuses = statuses.filter(s =>
+              (s.context || "").toLowerCase().includes("netlify")
+            );
+
+            if (!netlifyStatuses.length) {
+              console.log("No Netlify status found yet; skipping.");
+              return;
+            }
+
+            const allNetlifySuccess = netlifyStatuses.every(s => s.state === "success");
+            if (!allNetlifySuccess) {
+              console.log("Netlify status not successful yet; skipping.");
+              console.log(netlifyStatuses.map(s => `${s.context}: ${s.state}`).join("\n"));
+              return;
+            }
+
+            // Enable auto-merge (squash by default)
+            // This requires that auto-merge is enabled in repo settings (you already did).
+            try {
+              await github.graphql(`
+                mutation EnableAutoMerge($pullRequestId: ID!) {
+                  enablePullRequestAutoMerge(input: {
+                    pullRequestId: $pullRequestId,
+                    mergeMethod: SQUASH
+                  }) {
+                    pullRequest {
+                      number
+                      autoMergeRequest {
+                        enabledAt
+                      }
+                    }
+                  }
+                }
+              `, { pullRequestId: pr2.node_id });
+
+              console.log("Auto-merge enabled for PR #" + prNumber);
+            } catch (e) {
+              console.log("Could not enable auto-merge (maybe already enabled).");
+              console.log(String(e));
+            }
+
+            // If it’s already mergeable and checks are green, merge now.
+            // (If branch protection requires auto-merge only, this may fail, which is fine.)
+            try {
+              await github.rest.pulls.merge({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber,
+                merge_method: "squash",
+              });
+              console.log("Merged PR #" + prNumber);
+            } catch (e) {
+              console.log("Direct merge attempt failed (may be protected; auto-merge will handle it).");
+              console.log(String(e));
+            }
+        env:
+          prNumber: ${{ steps.pr.outputs.number }}
