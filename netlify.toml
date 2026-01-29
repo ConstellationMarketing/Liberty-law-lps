@@ -9,3 +9,7 @@
 
 [build.environment]
   NODE_VERSION = "18"
+
+# Form submission settings - redirect to custom thank you page
+[forms]
+  redirect_to = "/thank-you"
