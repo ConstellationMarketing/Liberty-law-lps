@@ -3,6 +3,7 @@ export { ClientCategoriesSection } from "./ClientCategoriesSection";
 export { ClientTestimonialsSection } from "./ClientTestimonialsSection";
 export { CriminalDefenseServicesSection } from "./CriminalDefenseServicesSection";
 export { AboutUsSection } from "./AboutUsSection";
+export { DefenseCategoriesSection } from "./DefenseCategoriesSection";
 export { AttorneySection } from "./AttorneySection";
 export { WhyChooseUsSection } from "./WhyChooseUsSection";
 export { ContactSection } from "./ContactSection";

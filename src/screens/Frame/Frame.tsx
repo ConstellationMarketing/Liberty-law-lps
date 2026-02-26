@@ -5,7 +5,7 @@ import {
   ClientCategoriesSection,
   ClientTestimonialsSection,
   CriminalDefenseServicesSection,
-  AboutUsSection,
+  DefenseCategoriesSection,
   AttorneySection,
   WhyChooseUsSection,
   ContactSection,
@@ -84,7 +84,7 @@ export const Frame = (): JSX.Element => {
         <HighlightBoxesSection />
         <CriminalDefenseServicesSection />
         <WhyChooseUsSection />
-        <AboutUsSection />
+        <DefenseCategoriesSection />
         <AttorneySection />
         <ClientCategoriesSection />
         <ClientTestimonialsSection />
