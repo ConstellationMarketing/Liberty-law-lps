@@ -36,10 +36,6 @@ export const DefenseCategoriesSection = (): JSX.Element => {
           <h2 className="font-heading text-wosnik-dark text-3xl md:text-4xl lg:text-5xl mb-4">
             How We Can Help You
           </h2>
-          <p className="font-body text-gray-700 text-lg max-w-3xl mx-auto">
-            Liberty Law P.C. defends clients across a wide range of criminal
-            matters throughout Naperville and surrounding counties.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
