@@ -34,7 +34,7 @@ export const DefenseCategoriesSection = (): JSX.Element => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading text-wosnik-dark text-3xl md:text-4xl lg:text-5xl mb-4">
-            How We Can Help You
+            FIVE CLIENT CATEGORY CARDS – Liberty Law, P.C.
           </h2>
         </div>
 
