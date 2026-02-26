@@ -42,7 +42,7 @@ export const DefenseCategoriesSection = (): JSX.Element => {
           {categories.map((category, index) => (
             <div
               key={index}
-              className={`bg-white border-l-4 border-wosnik-accent p-6 rounded-r-lg hover:shadow-md transition-shadow duration-300${index === categories.length - 1 ? " md:col-span-2" : ""}`}
+              className={`bg-white border-l-4 border-wosnik-accent p-6 rounded-r-lg hover:shadow-md transition-shadow duration-300${index === categories.length - 1 ? " md:col-span-2 text-center" : ""}`}
             >
               <h3 className="font-heading text-wosnik-dark text-xl md:text-2xl mb-3">
                 {category.title}
