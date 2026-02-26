@@ -49,12 +49,12 @@ export const CriminalDefenseServicesSection = (): JSX.Element => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="font-body text-gray-700 text-base mb-6">
+          <p className="font-body text-gray-700 text-lg md:text-xl font-medium mb-6">
             Ready to discuss your case? Call us today for a free consultation.
           </p>
           <a
             href="tel:6302836421"
-            className="bg-wosnik-accent hover:bg-wosnik-accent/80 text-white font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent transition-all duration-150 uppercase tracking-[2px] whitespace-nowrap inline-block"
+            className="bg-wosnik-accent hover:bg-black text-white font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent hover:border-black transition-all duration-150 uppercase tracking-[2px] whitespace-nowrap inline-block"
           >
             Call (630) 283-6421
           </a>

@@ -3,8 +3,9 @@ import { Helmet } from "react-helmet";
 import {
   HighlightBoxesSection,
   ClientCategoriesSection,
+  ClientTestimonialsSection,
   CriminalDefenseServicesSection,
-  AboutUsSection,
+  DefenseCategoriesSection,
   AttorneySection,
   WhyChooseUsSection,
   ContactSection,
@@ -26,13 +27,13 @@ const HeroSection = (): JSX.Element => {
             />
           </div>
 
-          <div className="flex flex-col items-end">
+          <div className="flex flex-col items-end gap-2">
             <p className="font-body text-[#04304c] text-xs uppercase tracking-wider font-bold">Naperville's Trusted Criminal Defense</p>
             <a
               href="tel:6302836421"
-              className="font-body text-wosnik-dark hover:text-wosnik-accent transition-colors text-lg font-semibold"
+              className="font-body text-wosnik-dark hover:text-wosnik-accent transition-colors text-lg font-semibold border-2 border-wosnik-dark rounded-md px-4 py-2 inline-block mt-1"
             >
-              (630) 283-6421
+              Call Now (630) 283-6421
             </a>
           </div>
         </div>
@@ -53,7 +54,7 @@ const HeroSection = (): JSX.Element => {
         </p>
 
         <button
-          className="bg-wosnik-accent hover:bg-wosnik-accent/80 text-white font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent transition-all duration-150 uppercase tracking-[2px] whitespace-nowrap inline-block"
+          className="bg-wosnik-accent hover:bg-black text-white font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent hover:border-black transition-all duration-150 uppercase tracking-[2px] whitespace-nowrap inline-block"
           onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
         >
           Request Free Consultation
@@ -67,29 +68,26 @@ export const Frame = (): JSX.Element => {
   return (
     <div className="w-full bg-wosnik-light">
       <Helmet>
-        <title>Liberty Law P.C.</title>
+        <title>Liberty Law P.C. – Criminal Defense Attorneys</title>
         <meta
           name="description"
-          content="Facing felony or misdemeanor charges in Naperville? Liberty Law, P.C. provides aggressive, results-driven criminal defense. Free consultations available - call today."
+          content="Liberty Law P.C. provides experienced criminal defense representation in Georgia. Call today for a consultation."
         />
+        <meta property="og:title" content="Liberty Law P.C. – Criminal Defense Attorneys" />
+        <meta property="og:description" content="Liberty Law P.C. provides experienced criminal defense representation in Georgia." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Liberty Law P.C." />
-        <meta property="og:description" content="Facing felony or misdemeanor charges in Naperville? Liberty Law, P.C. provides aggressive, results-driven criminal defense. Free consultations available - call today." />
-        <meta property="og:image" content="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F5af7e492db8347e48dcdefbb3332a950?format=webp&width=1200" />
-        <meta property="og:site_name" content="Liberty Law P.C." />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Liberty Law P.C." />
-        <meta name="twitter:description" content="Facing felony or misdemeanor charges in Naperville? Liberty Law, P.C. provides aggressive, results-driven criminal defense. Free consultations available - call today." />
-        <meta name="twitter:image" content="https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F5af7e492db8347e48dcdefbb3332a950?format=webp&width=1200" />
+        <meta property="og:url" content="https://help.libertylawfirm.net/" />
+        <meta property="og:image" content="https://help.libertylawfirm.net/logo.png" />
       </Helmet>
       <div className="flex flex-col">
         <HeroSection />
         <HighlightBoxesSection />
         <CriminalDefenseServicesSection />
         <WhyChooseUsSection />
-        <AboutUsSection />
+        <DefenseCategoriesSection />
         <AttorneySection />
         <ClientCategoriesSection />
+        <ClientTestimonialsSection />
         <CallToActionMainSection />
         <ContactSection />
         <FooterSection />

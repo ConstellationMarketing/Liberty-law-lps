@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import {
   HighlightBoxesSection,
   ClientCategoriesSection,
+  ClientTestimonialsSection,
   CriminalDefenseServicesSection,
   AboutUsSection,
   AttorneySection,
@@ -26,13 +27,13 @@ const IllinoisHeroSection = (): JSX.Element => {
             />
           </div>
 
-          <div className="flex flex-col items-end">
+          <div className="flex flex-col items-end gap-2">
             <p className="font-body text-[#04304c] text-xs uppercase tracking-wider font-bold">Naperville's Trusted Criminal Defense</p>
             <a
               href="tel:6302836421"
-              className="font-body text-wosnik-dark hover:text-wosnik-accent transition-colors text-lg font-semibold"
+              className="font-body text-wosnik-dark hover:text-wosnik-accent transition-colors text-lg font-semibold border-2 border-wosnik-dark rounded-md px-4 py-2 inline-block mt-1"
             >
-              (630) 283-6421
+              Call Now (630) 283-6421
             </a>
           </div>
         </div>
@@ -53,7 +54,7 @@ const IllinoisHeroSection = (): JSX.Element => {
         </p>
 
         <button
-          className="bg-wosnik-accent hover:bg-wosnik-accent/80 text-white font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent transition-all duration-150 uppercase tracking-[2px] whitespace-nowrap inline-block"
+          className="bg-wosnik-accent hover:bg-black text-white font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent hover:border-black transition-all duration-150 uppercase tracking-[2px] whitespace-nowrap inline-block"
           onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
         >
           Request Free Consultation
@@ -90,6 +91,7 @@ export const IllinoisCriminalAttorney = (): JSX.Element => {
         <AboutUsSection />
         <AttorneySection />
         <ClientCategoriesSection />
+        <ClientTestimonialsSection />
         <CallToActionMainSection />
         <ContactSection />
         <FooterSection />

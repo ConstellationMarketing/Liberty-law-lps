@@ -1,13 +1,41 @@
 import React from "react";
 import { Phone, MapPin } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export const ContactSection = (): JSX.Element => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      // Submit to UseBasin
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        // Redirect to custom thank you page
+        navigate("/thank-you");
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("There was an error submitting the form. Please try again.");
+    }
+  };
+
   return (
     <section id="contact" className="w-full bg-wosnik-light py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading text-wosnik-dark text-3xl md:text-4xl font-normal mb-4">
-            Contact Wosnik Law, LLC
+            Contact Liberty Law P.C.
           </h2>
           <p className="font-body text-wosnik-dark text-lg">
             Call and speak with us today about your criminal or family law matter
@@ -27,6 +55,7 @@ export const ContactSection = (): JSX.Element => {
               data-netlify-honeypot="bot-field"
               action="/thank-you"
               className="space-y-4"
+              onSubmit={handleSubmit}
             >
               <input type="hidden" name="form-name" value="consultation-request" />
               <p className="hidden">
@@ -77,7 +106,7 @@ export const ContactSection = (): JSX.Element => {
 
               <button
                 type="submit"
-                className="w-full bg-wosnik-accent hover:bg-wosnik-accent/80 text-wosnik-dark font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent transition-all duration-150 uppercase tracking-[2px] whitespace-nowrap inline-block"
+                className="w-full bg-wosnik-accent hover:bg-black text-white font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent hover:border-black transition-all duration-150 uppercase tracking-[2px] whitespace-nowrap inline-block"
               >
                 Send Message
               </button>
@@ -136,7 +165,7 @@ export const ContactSection = (): JSX.Element => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Wosnik Law Office Location"
+            title="Liberty Law P.C. Office Location"
           ></iframe>
         </div>
       </div>

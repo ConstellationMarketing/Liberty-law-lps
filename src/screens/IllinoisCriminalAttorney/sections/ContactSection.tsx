@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const ContactSection = (): JSX.Element => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -13,6 +15,37 @@ export const ContactSection = (): JSX.Element => {
       ...formData,
       [e.target.name]: e.target.value
     });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    // Convert FormData to URL-encoded string for Netlify
+    const body = new URLSearchParams();
+    formData.forEach((value, key) => {
+      body.append(key, value.toString());
+    });
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: body.toString(),
+      });
+
+      if (response.ok) {
+        // Redirect to custom thank you page
+        navigate("/thank-you");
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("There was an error submitting the form. Please try again.");
+    }
   };
 
   return (
@@ -37,9 +70,10 @@ export const ContactSection = (): JSX.Element => {
             <form
               name="consultation-request"
               method="POST"
+              action="/thank-you"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              action="/thank-you"
+              onSubmit={handleSubmit}
             >
               <input type="hidden" name="form-name" value="consultation-request" />
               <p className="hidden">
@@ -111,7 +145,7 @@ export const ContactSection = (): JSX.Element => {
 
                 <button
                   type="submit"
-                  className="w-full bg-wosnik-accent hover:bg-wosnik-accent/80 text-white font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent transition-all duration-150 uppercase tracking-[2px]"
+                  className="w-full bg-wosnik-accent hover:bg-black text-white font-inter font-medium text-sm px-8 py-3 rounded-full border border-wosnik-accent hover:border-black transition-all duration-150 uppercase tracking-[2px]"
                 >
                   Send Message
                 </button>
@@ -141,7 +175,7 @@ export const ContactSection = (): JSX.Element => {
                       href="tel:6302836421"
                       className="font-body text-wosnik-accent hover:text-wosnik-accent/80 text-lg"
                     >
-                      (630) 283-6421
+                      Call Now (630) 283-6421
                     </a>
                   </div>
                 </div>
