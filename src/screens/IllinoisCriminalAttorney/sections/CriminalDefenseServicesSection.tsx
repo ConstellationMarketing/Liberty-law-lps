@@ -21,13 +21,13 @@ export const CriminalDefenseServicesSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="w-full bg-white py-16 md:py-20">
+    <section className="w-full bg-wosnik-dark py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="font-heading text-wosnik-dark text-3xl md:text-4xl lg:text-5xl mb-4">
+          <h2 className="font-heading text-white text-3xl md:text-4xl lg:text-5xl mb-4">
             Start With Proven Criminal Defense
           </h2>
-          <p className="font-body text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="font-body text-wosnik-accent text-lg max-w-3xl mx-auto leading-relaxed">
             You're not alone — our skilled defense team stands by your side from arrest to resolution.
           </p>
         </div>
@@ -49,7 +49,7 @@ export const CriminalDefenseServicesSection = (): JSX.Element => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="font-body text-gray-700 text-lg md:text-xl font-medium mb-6">
+          <p className="font-body text-white text-lg md:text-xl font-medium mb-6">
             Ready to discuss your case? Call us today for a free consultation.
           </p>
           <a
