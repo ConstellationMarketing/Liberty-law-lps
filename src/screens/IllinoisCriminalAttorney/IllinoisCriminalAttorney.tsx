@@ -7,7 +7,6 @@ import {
   CriminalDefenseServicesSection,
   AboutUsSection,
   AttorneySection,
-  WhyChooseUsSection,
   ContactSection,
   CallToActionMainSection,
   FooterSection
@@ -87,7 +86,6 @@ export const IllinoisCriminalAttorney = (): JSX.Element => {
         <IllinoisHeroSection />
         <HighlightBoxesSection />
         <CriminalDefenseServicesSection />
-        <WhyChooseUsSection />
         <AboutUsSection />
         <AttorneySection />
         <ClientCategoriesSection />
