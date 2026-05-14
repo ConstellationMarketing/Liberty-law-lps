@@ -7,7 +7,6 @@ import {
   CriminalDefenseServicesSection,
   DefenseCategoriesSection,
   AttorneySection,
-  WhyChooseUsSection,
   ContactSection,
   CallToActionMainSection,
   FooterSection
@@ -83,7 +82,6 @@ export const Frame = (): JSX.Element => {
         <HeroSection />
         <HighlightBoxesSection />
         <CriminalDefenseServicesSection />
-        <WhyChooseUsSection />
         <DefenseCategoriesSection />
         <AttorneySection />
         <ClientCategoriesSection />
