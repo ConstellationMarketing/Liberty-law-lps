@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 import {
   ArrowLeft,
   Check,
@@ -32,6 +33,11 @@ const nextSteps = [
 ];
 
 export const ThankYou = (): JSX.Element => {
+  const location = useLocation();
+  const returnPath = new URLSearchParams(location.search).get("from") === "domestic-violence"
+    ? "/lp-domestic-violence/"
+    : "/lp-criminal-lawyer/";
+
   return (
     <div className="flex min-h-screen flex-col bg-white font-outfit text-[#04304c]">
       <Helmet>
@@ -51,7 +57,7 @@ export const ThankYou = (): JSX.Element => {
 
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#04304c] shadow-xl">
         <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:h-[92px] lg:px-8">
-          <a href="/lp-criminal-lawyer/" aria-label="Return to Liberty Law P.C. landing page">
+          <a href={returnPath} aria-label="Return to Liberty Law P.C. landing page">
             <img
               src={LOGO_URL}
               alt="Liberty Law P.C."
@@ -112,7 +118,7 @@ export const ThankYou = (): JSX.Element => {
                 Call (630) 283-6421
               </a>
               <a
-                href="/lp-criminal-lawyer/"
+                href={returnPath}
                 className="inline-flex min-h-14 items-center justify-center gap-2 border border-white/40 px-7 py-4 font-semibold text-white transition hover:border-white hover:bg-white/10"
               >
                 <ArrowLeft className="h-5 w-5 text-[#EC3024]" />
