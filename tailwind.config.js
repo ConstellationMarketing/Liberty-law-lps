@@ -57,6 +57,8 @@ module.exports = {
         heading: ['"Montserrat"', 'sans-serif'],
         body: ['"Montserrat"', 'sans-serif'],
         inter: ['"Montserrat"', 'sans-serif'],
+        outfit: ['"Outfit"', 'system-ui', 'sans-serif'],
+        display: ['"Libre Baskerville"', 'Georgia', 'serif'],
         libre: ['"Montserrat"', 'sans-serif'],
       },
       keyframes: {
