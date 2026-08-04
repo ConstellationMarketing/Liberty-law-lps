@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 const LOGO_URL =
-  "https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F5af7e492db8347e48dcdefbb3332a950?format=webp&width=800";
+  "https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2Fa256a0fb50494811bd2a317d7b39f7d5?format=webp&width=800&height=1200";
 const ATTORNEY_IMAGE_URL =
   "https://cdn.builder.io/api/v1/image/assets%2Fc8a7b33c1f3e4309983e45cabed92535%2F3882d3e3483c4524a873012d9c8cd4b8?format=webp&width=1000";
 
