@@ -284,8 +284,9 @@ export const CriminalLawyerLP = (): JSX.Element => {
           />
           <div className="absolute -right-24 top-0 h-96 w-96 rounded-full bg-[#EC3024]/20 blur-3xl" aria-hidden="true" />
 
-          <div className="relative mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:py-20 lg:grid-cols-[1.08fr_.92fr] lg:items-center lg:px-8 lg:py-24">
-            <div>
+          <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-20 lg:px-8 lg:py-24">
+            <div className="grid gap-12 lg:grid-cols-[1.08fr_.92fr] lg:items-center">
+              <div>
               <div className="mb-6 inline-flex items-center gap-2 border border-[#EC3024]/60 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white sm:text-sm">
                 <MapPin className="h-4 w-4 text-[#EC3024]" />
                 Naperville & DuPage County, Illinois
@@ -319,23 +320,25 @@ export const CriminalLawyerLP = (): JSX.Element => {
                 </a>
               </div>
 
-              <div className="mt-10 grid gap-4 border-t border-white/15 pt-7 sm:grid-cols-2">
-                {[
-                  "Free Consultation Available",
-                  "Former City Prosecutor",
-                  "Highly Rated on Google",
-                  "24/7 Availability",
-                  "Serving Naperville & DuPage County, IL",
-                ].map((badge) => (
-                  <div key={badge} className="flex items-start gap-2 text-sm font-medium text-white/85">
-                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#EC3024]" />
-                    {badge}
-                  </div>
-                ))}
               </div>
+
+              <ConsultationForm />
             </div>
 
-            <ConsultationForm />
+            <div className="mt-12 flex flex-nowrap items-center justify-between gap-6 overflow-x-auto border-t border-white/15 pt-7 pb-1">
+              {[
+                "Free Consultation Available",
+                "Former City Prosecutor",
+                "Highly Rated on Google",
+                "24/7 Availability",
+                "Serving Naperville & DuPage County, IL",
+              ].map((badge) => (
+                <div key={badge} className="flex shrink-0 items-center gap-2 whitespace-nowrap text-xs font-medium text-white/85 lg:text-sm">
+                  <Check className="h-4 w-4 shrink-0 text-[#EC3024]" />
+                  {badge}
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
