@@ -511,7 +511,18 @@ export const CriminalLawyerLP = (): JSX.Element => {
         </div>
 
         <div className="mx-auto flex max-w-7xl flex-col gap-3 pt-7 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 Liberty Law P.C. Privacy Policy.</p>
+          <p>
+            © 2026 Liberty Law P.C.{" "}
+            <a
+              href="https://libertylawfirm.net/privacy-policy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-[#EC3024] underline-offset-4 transition hover:text-white"
+            >
+              Privacy Policy
+            </a>
+            .
+          </p>
           <p className="flex items-center gap-2">
             <MessageSquareText className="h-4 w-4" />
             Free consultation available · 24/7 availability
