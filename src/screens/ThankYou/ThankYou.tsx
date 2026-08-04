@@ -34,9 +34,12 @@ const nextSteps = [
 
 export const ThankYou = (): JSX.Element => {
   const location = useLocation();
-  const returnPath = new URLSearchParams(location.search).get("from") === "domestic-violence"
+  const source = new URLSearchParams(location.search).get("from");
+  const returnPath = source === "domestic-violence"
     ? "/lp-domestic-violence/"
-    : "/lp-criminal-lawyer/";
+    : source === "sexual-assault"
+      ? "/lp-sexual-assault/"
+      : "/lp-criminal-lawyer/";
 
   return (
     <div className="flex min-h-screen flex-col bg-white font-outfit text-[#04304c]">
