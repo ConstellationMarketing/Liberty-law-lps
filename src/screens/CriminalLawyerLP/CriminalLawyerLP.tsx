@@ -295,10 +295,7 @@ export const CriminalLawyerLP = (): JSX.Element => {
               <h1 className="font-display max-w-3xl text-4xl font-normal leading-[1.08] sm:text-5xl lg:text-[64px]">
                 Relentless Criminal Defense <span className="text-[#EC3024]">Protecting Your Future.</span>
               </h1>
-              <h2 className="mt-6 max-w-2xl text-xl font-semibold leading-8 text-white sm:text-2xl">
-                Criminal Defense Lawyers Serving Naperville & DuPage County, IL
-              </h2>
-              <p className="mt-4 max-w-2xl text-lg leading-8 text-white/80">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
                 A criminal charge can put your freedom, reputation, and future at risk. Whether you're facing a felony or misdemeanor, Liberty Law P.C. provides strategic criminal defense to protect your rights and pursue the best possible outcome.
               </p>
 

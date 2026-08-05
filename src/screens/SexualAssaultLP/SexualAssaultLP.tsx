@@ -295,10 +295,7 @@ export const SexualAssaultLP = (): JSX.Element => {
               <h1 className="font-display max-w-3xl text-4xl font-normal leading-[1.08] sm:text-5xl lg:text-[64px]">
                 Aggressive Sexual Assault Defense <span className="text-[#EC3024]">Protecting Your Future.</span>
               </h1>
-              <h2 className="mt-6 max-w-2xl text-xl font-semibold leading-8 text-white sm:text-2xl">
-                Sexual Assault Defense Lawyers Serving Naperville & DuPage County, IL
-              </h2>
-              <p className="mt-4 max-w-2xl text-lg leading-8 text-white/80">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
                 If you've been accused of sexual assault, your freedom, reputation, and future are on the line. Attorney David Liberty provides strategic defense for individuals facing sexual assault charges, protecting your rights and pursuing the best possible outcome.
               </p>
 
