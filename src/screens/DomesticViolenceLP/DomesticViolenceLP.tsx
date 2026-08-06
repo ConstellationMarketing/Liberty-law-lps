@@ -24,27 +24,27 @@ const ATTORNEY_IMAGE_URL =
 const benefits = [
   {
     icon: Shield,
-    title: "Domestic Violence Defense Representation",
+    title: "Defense for a Wide Range of Domestic Violence Charges",
     description:
-      "If you've been accused of domestic violence, Liberty Law P.C. provides strategic legal defense focused on protecting your rights, reputation, freedom, and future.",
+      "Whether you're facing allegations of domestic battery, aggravated domestic battery, orders of protection, or restraining order violations, Liberty Law P.C. provides strategic legal representation focused on protecting your rights, reputation, freedom, and future.",
   },
   {
     icon: Gavel,
-    title: "Personalized Domestic Violence Defense Strategies",
+    title: "Customized Defense Strategy for Your Case",
     description:
-      "Every case is unique. Attorney David Liberty carefully reviews the evidence, identifies weaknesses in the prosecution's case, and develops a defense strategy tailored to your circumstances.",
+      "Every case presents unique facts and legal challenges. Attorney David Liberty carefully reviews the evidence, identifies weaknesses in the prosecution's case, and develops a defense strategy tailored to the specific allegations and circumstances surrounding your case.",
   },
   {
     icon: Clock3,
-    title: "Early Intervention & Aggressive Advocacy",
+    title: "Early Intervention Can Strengthen Your Defense",
     description:
-      "The sooner you have legal representation, the stronger your defense can be. From investigations through formal charges, David Liberty acts quickly to protect your rights and pursue the best possible outcome.",
+      "The sooner you have legal representation, the more opportunities there are to protect your rights and build a strong defense. Whether you're under investigation, have been arrested, or are facing court proceedings, David Liberty acts quickly to safeguard your interests and pursue the best possible outcome.",
   },
   {
     icon: UserCheck,
     title: "Dedicated Representation Every Step of the Way",
     description:
-      "Domestic violence allegations can have life-changing consequences. You'll receive clear communication, honest legal guidance, and committed representation from your initial consultation through the resolution of your case.",
+      "Domestic violence allegations can affect your freedom, family, employment, and future. Throughout your case, you'll receive clear communication, practical legal guidance, and committed representation focused on achieving the best possible resolution.",
   },
 ];
 
@@ -60,7 +60,7 @@ const reasons = [
       "You'll stay informed throughout your case with clear communication, honest legal guidance, and answers to your questions every step of the way.",
   },
   {
-    title: "Committed to Protecting Your Rights",
+    title: "Former Prosecutor on Your Side",
     description:
       "From the moment you're investigated or charged, David Liberty works to protect your rights, challenge the prosecution's case, and pursue the best possible outcome.",
   },
@@ -121,7 +121,7 @@ const ConsultationForm = (): JSX.Element => {
       <div className="absolute -inset-3 border border-[#EC3024]/40" aria-hidden="true" />
       <div className="relative bg-white p-6 text-[#04304c] shadow-2xl sm:p-8">
         <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-[#EC3024]">
-          Tell us how we can help
+          Your Liberty, Our Priority
         </p>
         <h2 className="font-display text-3xl leading-tight sm:text-4xl">
           Request Your Free Consultation
@@ -313,7 +313,7 @@ export const DomesticViolenceLP = (): JSX.Element => {
                   className="inline-flex min-h-14 items-center justify-center gap-2 border border-white/40 px-7 py-4 font-semibold text-white transition hover:border-white hover:bg-white/10"
                 >
                   <Phone className="h-5 w-5 text-[#EC3024]" />
-                  Call (630) 283-6421
+                  Call Now Available 24/7
                 </a>
               </div>
 
@@ -322,7 +322,7 @@ export const DomesticViolenceLP = (): JSX.Element => {
               <ConsultationForm />
             </div>
 
-            <div className="mt-12 flex flex-nowrap items-center justify-between gap-6 overflow-x-auto border-t border-white/15 pt-7 pb-1">
+            <div className="mt-12 grid gap-4 border-t border-white/15 pt-7 sm:grid-cols-2 lg:grid-cols-5">
               {[
                 "Free Consultation Available",
                 "Former City Prosecutor",
@@ -330,7 +330,7 @@ export const DomesticViolenceLP = (): JSX.Element => {
                 "24/7 Availability",
                 "Serving Naperville & DuPage County, IL",
               ].map((badge) => (
-                <div key={badge} className="flex shrink-0 items-center gap-2 whitespace-nowrap text-xs font-medium text-white/85 lg:text-sm">
+                <div key={badge} className="flex items-center gap-2 text-xs font-medium text-white/85 lg:text-sm">
                   <Check className="h-4 w-4 shrink-0 text-[#EC3024]" />
                   {badge}
                 </div>
