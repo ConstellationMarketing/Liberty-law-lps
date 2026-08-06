@@ -199,7 +199,7 @@ const ConsultationForm = (): JSX.Element => {
             type="submit"
             className="flex w-full items-center justify-center gap-2 bg-[#EC3024] px-6 py-4 font-bold text-white transition hover:bg-[#04304c]"
           >
-            Get a Free Consultation
+            Get A Free Consultation
             <ArrowRight className="h-5 w-5" />
           </button>
 
