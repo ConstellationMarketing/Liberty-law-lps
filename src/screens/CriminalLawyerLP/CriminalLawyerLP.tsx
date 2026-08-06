@@ -74,15 +74,15 @@ const reasons = [
 const testimonials = [
   {
     name: "Tony Davis",
-    text: "David assisted me with a traffic matter. His courteous, prompt, and professional manner made it easy. Thank you, David. I'll recommend you to anyone who needs your services.",
+    text: "David assisted me with a traffic matter. His courteous, prompt, and professional manner made it easy. His fees were at the top of the scale I'd be willing to pay, but he gave a discount for upfront payment. Thank you, David. I'll recommend you to anyone who needs your services.",
   },
   {
-    name: "Jenest Espino",
-    text: "David was great in helping us. He was very patient and helpful, explained everything in terms we could understand, and made sure we always knew what was happening.",
+    name: "Jaclyn Whitson",
+    text: "I had a great experience here! David is experienced and kind. He helped me navigate a tough situation and explained things well.",
   },
   {
-    name: "Michael Mejia",
-    text: "David at Liberty Law was absolutely amazing. He worked quickly, accurately, and made a stressful situation feel seamless. I will always recommend him.",
+    name: "Jonathan Berning",
+    text: "David was amazing to work with! I would have been lost without his guidance!! Cannot recommend him enough.",
   },
 ];
 
