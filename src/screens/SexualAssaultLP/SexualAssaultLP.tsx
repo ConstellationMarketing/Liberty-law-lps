@@ -254,7 +254,7 @@ export const SexualAssaultLP = (): JSX.Element => {
           className="flex flex-1 items-center justify-center gap-2 bg-[#04304c] px-2 py-4 text-sm font-bold text-white"
         >
           <Phone className="h-4 w-4 text-[#EC3024]" />
-          Call Now
+          Call Now 24/7
         </a>
         <button
           type="button"
