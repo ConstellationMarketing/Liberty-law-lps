@@ -217,12 +217,12 @@ export const SexualAssaultLP = (): JSX.Element => {
   return (
     <div className="min-h-screen bg-white pb-[60px] font-outfit text-[#04304c] sm:pb-0">
       <Helmet>
-        <title>Naperville’s Trusted Sexual Assault Defense</title>
+        <title>Naperville’s Sexual Assault Defense</title>
         <meta
           name="description"
           content="Liberty Law P.C. provides strategic sexual assault defense in Naperville and DuPage County, Illinois. Book a free consultation with Attorney David Liberty."
         />
-        <meta property="og:title" content="Naperville’s Trusted Sexual Assault Defense" />
+        <meta property="og:title" content="Naperville’s Sexual Assault Defense" />
         <meta
           property="og:description"
           content="Aggressive sexual assault defense protecting your freedom, reputation, and future."
