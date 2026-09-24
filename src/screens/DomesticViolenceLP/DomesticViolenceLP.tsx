@@ -217,12 +217,12 @@ export const DomesticViolenceLP = (): JSX.Element => {
   return (
     <div className="min-h-screen bg-white pb-[60px] font-outfit text-[#04304c] sm:pb-0">
       <Helmet>
-        <title>Naperville’s Trusted Domestic Violence Defense</title>
+        <title>Naperville’s Domestic Violence Defense</title>
         <meta
           name="description"
           content="Liberty Law P.C. provides strategic domestic violence defense in Naperville and DuPage County, Illinois. Book a free consultation with Attorney David Liberty."
         />
-        <meta property="og:title" content="Naperville’s Trusted Domestic Violence Defense" />
+        <meta property="og:title" content="Naperville’s Domestic Violence Defense" />
         <meta
           property="og:description"
           content="Aggressive domestic violence defense protecting your freedom, reputation, and future."
